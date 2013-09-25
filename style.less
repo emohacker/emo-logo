@@ -1,0 +1,435 @@
+@zoom:1;
+@base:16px;
+@trabase:(@base);
+@trabase-long:@base*1.6875;
+@trabase-gap:(@trabase+1px);
+@trabase-long-gap:(@trabase-long+1px);
+@explodGap:@base*2;
+@bgcolor:#077c99;
+
+body{
+    width: 100%;
+    min-height: 590px;
+    background: @bgcolor;
+}
+.warper{
+    width:960px;
+    zoom:1;
+    margin: 0 auto;
+    padding: 100px 0 0;
+}
+.emologo-base{
+    width:@base*4;
+    height: @base*4;
+    float:left;
+    
+    position: relative;
+}
+.emologo-base .tra{
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: @trabase;
+    position: absolute;
+}
+.emologo-base .tra-t{
+    border-width: @trabase-long @trabase 0 @trabase ; 
+    border-color: #fff transparent transparent transparent;
+}
+.emologo-base .tra-b{
+    border-width: 0 @trabase @trabase-long @trabase ; 
+    border-color: transparent transparent #fff transparent;
+}
+
+.emologo-base .t1,.emologo-base .t1sort{
+    top:0;
+    left:@trabase-gap;
+}
+.emologo-base .t2,.emologo-base .t2sort{
+    top:0;
+    left:0;
+}
+.emologo-base .t3,.emologo-base .t3sort{
+    top:@trabase-long-gap;
+    left:0;
+}
+.emologo-base .t4,.emologo-base .t4sort{
+    top:@trabase-long-gap;
+    left:@trabase-gap;
+}
+.emologo-base .t5,.emologo-base .t5sort{
+    top:@trabase-long-gap;
+    right:-@trabase*0.125;
+}
+.emologo-base .t6,.emologo-base .t6sort{
+    top:0;
+    right:-@trabase*0.125;
+}
+.emologo-base .t1,.emologo-base .t2,.emologo-base .t3,
+.emologo-base .t4,.emologo-base .t5,.emologo-base .t6{
+    backface-visibility: hidden;
+    animation-duration: .2s;
+    animation-delay: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+.emologo-base .t2{
+    animation-delay: .4s;
+}
+.emologo-base .t3{
+    animation-delay: .6s;
+}
+.emologo-base .t4{
+    animation-delay: .8s;
+}
+.emologo-base .t5{
+    animation-delay: 1.2s;
+}
+.emologo-base .t6{
+    animation-delay: 1.4s;
+}
+.emologo .step1{
+    opacity: 1;
+    backface-visibility: hidden;
+    animation-duration:.1s;
+    animation-delay: 1.6s;
+    animation-timing-function:liner;
+    animation-fill-mode: both;
+    animation-name: step1;
+}
+.emologo .step2{
+    opacity: 0;
+    backface-visibility: hidden;
+    animation-duration:.1s;
+    animation-delay: 1.6s;
+    animation-timing-function:liner;
+    animation-fill-mode: both;
+    animation-name: step2;
+}
+
+.emologo .emo-e{
+    backface-visibility: hidden;
+    animation-duration:.2s;
+    animation-delay: .2s;
+    animation-timing-function:  cubic-bezier(.5,0.2,.1,.1);
+    animation-fill-mode: both;
+    animation-name: m2e;
+}
+
+.emologo .emo-m{
+    left:-@trabase*0.625;
+    backface-visibility: hidden;
+    animation-duration: .3s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: e2m;
+}
+
+
+
+.emologo .emo-o{
+    backface-visibility: hidden;
+    animation-duration: .3s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: m2e;
+}
+.emo-e .t1sort{
+    animation-duration: .6s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t1sort;
+}
+.emo-e .t2sort{
+    animation-duration: .7s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t2sort;
+}
+.emo-e .t3sort{
+    animation-duration: .8s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t3sort;
+}
+.emo-e .t4sort{
+    animation-duration: .9s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t4sort;
+}
+
+.emo-m .t1sort{
+    animation-duration: .6s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t1sort;
+}
+.emo-m .t2sort{
+    animation-duration: .7s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t2sort;
+}
+.emo-m .t3sort{
+    animation-duration: .8s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t3sort;
+}
+.emo-m .t4sort{
+    animation-duration: .9s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t4sort;
+}
+
+
+
+.emo-o .t1sort{
+    animation-duration: .4s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t1sort;
+}
+.emo-o .t2sort{
+    animation-duration: .5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t2sort;
+}
+.emo-o .t3sort{
+    animation-duration: .6s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t3sort;
+}
+.emo-o .t4sort{
+    animation-duration: .7s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t4sort;
+}
+.emo-o .t5sort{
+    animation-duration: .8s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t5sort;
+}
+.emo-o .t6sort{
+    animation-duration: .9s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: t6sort;
+}
+
+
+.emologo .hover-up,.emologo .hover-down{
+    position: absolute;
+    z-index: 9;
+    height: 0;
+    left:@trabase*0.625;
+    top:@trabase*0.375;
+    width: @trabase*2;
+    border-bottom: @trabase solid @bgcolor;
+    border-left: @trabase*0.625 solid transparent;
+    backface-visibility: hidden;
+    animation-duration: .2s;
+    animation-delay: 2.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: zoomFadeIn;
+}
+.emologo .hover-down{
+    border-bottom: 0;
+    top:@trabase*1.875;
+    border-top: @trabase solid @bgcolor;
+    border-left: @trabase*0.625 solid transparent;
+}
+
+.emo-m .hover-up,.emo-m .hover-down{
+    animation-delay: 2.8s;
+}
+
+.emologo .hover-round{
+    position: absolute;
+    z-index: 9;
+    left:@trabase*0.6875;
+    top:@trabase*0.25;
+    width: 0;
+    height: 0;
+    border: @trabase*1.375 solid @bgcolor;
+    border-radius: @trabase*1.375;
+    backface-visibility: hidden;
+    animation-duration: .3s;
+    animation-delay: 3.0s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: zoomFadeIn;
+}
+
+@keyframes step1{
+     0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes step2{
+     0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes m2e{
+     0% {
+        transform-origin: center center;
+        
+        transform: rotateZ(0);
+    }
+    100% {
+        transform-origin: center center;
+        
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes e2m{
+     0% {
+        transform-origin: center center;
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform-origin: center center;
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes fadeIn{
+     0% {
+        opacity:0;
+    }
+    100% {
+        
+        opacity:1;
+    }
+}
+@keyframes zoomFadeIn{
+    0% {
+        transform: scale(0);
+        opacity:0;
+    }
+    20% {
+        transform: scale(2);
+        opacity:.9;
+    }
+    100% {
+        transform: scale(0.65);
+        opacity:1;
+    }
+}
+@keyframes t1sort{
+     0% {
+        transform-origin: center center;
+        transform:translate(0,0);
+    }
+    90%{
+        transform-origin: center center;
+        transform:translate(0,-@explodGap);
+    }
+    100% {
+        transform-origin: center center;
+        transform:translate(0,-@trabase*0.0625);
+    }
+}
+@keyframes t2sort{
+     0% {
+        transform-origin: center center;
+        transform:translate(0,0);
+    }
+    90%{
+        transform-origin: center center;
+        transform:translate(-@explodGap,-@explodGap);
+    }
+    100% {
+        transform-origin: center center;
+        transform:translate(@trabase*0.0625,-@trabase*0.0625);
+    }
+}
+@keyframes t3sort{
+     0% {
+        transform-origin: center center;
+        transform:translate(0,0);
+    }
+    90%{
+        transform-origin: center center;
+        transform:translate(-@explodGap,@explodGap);
+    }
+    100% {
+        transform-origin: center center;
+        transform:translate(@trabase*0.0625,-@trabase*0.125);
+    }
+}
+@keyframes t4sort{
+     0% {
+        transform-origin: center center;
+        transform:translate(0,0);
+    }
+    90%{
+        transform-origin: center center;
+        transform:translate(0,@explodGap);
+    }
+    100% {
+        transform-origin: center center;
+        transform:translate(0,-@trabase*0.125);
+    }
+}
+@keyframes t5sort{
+     0% {
+        transform-origin: center center;
+        transform:translate(0,0);
+    }
+    90%{
+        transform-origin: center center;
+        transform:translate(@explodGap,@explodGap);
+    }
+    100% {
+        transform-origin: center center;
+        transform:translate(-@trabase*0.0625,-@trabase*0.125);
+    }
+}
+@keyframes t6sort{
+     0% {
+        transform-origin: center center;
+        transform:translate(0,0);
+    }
+    90%{
+        transform-origin: center center;
+        transform:translate(@explodGap,-@explodGap);
+    }
+    100% {
+        transform-origin: center center;
+        transform:translate(-@trabase*0.0625,-@trabase*0.0625);
+    }
+}
+
