@@ -1,0 +1,405 @@
+.emologo-base {
+  width: 64px;
+  height: 64px;
+  float: left;
+  position: relative;
+}
+.emologo-base .tra {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 16px;
+  position: absolute;
+}
+.emologo-base .tra-t {
+  border-width: 27px 16px 0 16px;
+  border-color: #fff transparent transparent transparent;
+}
+.emologo-base .tra-b {
+  border-width: 0 16px 27px 16px;
+  border-color: transparent transparent #fff transparent;
+}
+.emologo-base .t1,
+.emologo-base .t1sort {
+  top: 0;
+  left: 17px;
+}
+.emologo-base .t2,
+.emologo-base .t2sort {
+  top: 0;
+  left: 0;
+}
+.emologo-base .t3,
+.emologo-base .t3sort {
+  top: 28px;
+  left: 0;
+}
+.emologo-base .t4,
+.emologo-base .t4sort {
+  top: 28px;
+  left: 17px;
+}
+.emologo-base .t5,
+.emologo-base .t5sort {
+  top: 28px;
+  right: -2px;
+}
+.emologo-base .t6,
+.emologo-base .t6sort {
+  top: 0;
+  right: -2px;
+}
+.emologo-base .t1,
+.emologo-base .t2,
+.emologo-base .t3,
+.emologo-base .t4,
+.emologo-base .t5,
+.emologo-base .t6 {
+  backface-visibility: hidden;
+  animation-duration: .2s;
+  animation-delay: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+.emologo-base .t2 {
+  animation-delay: .4s;
+}
+.emologo-base .t3 {
+  animation-delay: .6s;
+}
+.emologo-base .t4 {
+  animation-delay: .8s;
+}
+.emologo-base .t5 {
+  animation-delay: 1.2s;
+}
+.emologo-base .t6 {
+  animation-delay: 1.4s;
+}
+.emologo .step1 {
+  opacity: 1;
+  backface-visibility: hidden;
+  animation-duration: .1s;
+  animation-delay: 1.6s;
+  animation-timing-function: liner;
+  animation-fill-mode: both;
+  animation-name: step1;
+}
+.emologo .step2 {
+  opacity: 0;
+  backface-visibility: hidden;
+  animation-duration: .1s;
+  animation-delay: 1.6s;
+  animation-timing-function: liner;
+  animation-fill-mode: both;
+  animation-name: step2;
+}
+.emologo .emo-e {
+  backface-visibility: hidden;
+  animation-duration: .2s;
+  animation-delay: .2s;
+  animation-timing-function: cubic-bezier(0.5, 0.2, 0.1, 0.1);
+  animation-fill-mode: both;
+  animation-name: m2e;
+}
+.emologo .emo-m {
+  left: -10px;
+  backface-visibility: hidden;
+  animation-duration: .3s;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: e2m;
+}
+.emologo .emo-o {
+  backface-visibility: hidden;
+  animation-duration: .3s;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: m2e;
+}
+.emo-e .t1sort {
+  animation-duration: .6s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t1sort;
+}
+.emo-e .t2sort {
+  animation-duration: .7s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t2sort;
+}
+.emo-e .t3sort {
+  animation-duration: .8s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t3sort;
+}
+.emo-e .t4sort {
+  animation-duration: .9s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t4sort;
+}
+.emo-m .t1sort {
+  animation-duration: .6s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t1sort;
+}
+.emo-m .t2sort {
+  animation-duration: .7s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t2sort;
+}
+.emo-m .t3sort {
+  animation-duration: .8s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t3sort;
+}
+.emo-m .t4sort {
+  animation-duration: .9s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t4sort;
+}
+.emo-o .t1sort {
+  animation-duration: .4s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t1sort;
+}
+.emo-o .t2sort {
+  animation-duration: .5s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t2sort;
+}
+.emo-o .t3sort {
+  animation-duration: .6s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t3sort;
+}
+.emo-o .t4sort {
+  animation-duration: .7s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t4sort;
+}
+.emo-o .t5sort {
+  animation-duration: .8s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t5sort;
+}
+.emo-o .t6sort {
+  animation-duration: .9s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: t6sort;
+}
+.emologo .hover-up,
+.emologo .hover-down {
+  position: absolute;
+  z-index: 9;
+  height: 0;
+  left: 10px;
+  top: 6px;
+  width: 32px;
+  border-bottom: 16px solid #077c99;
+  border-left: 10px solid transparent;
+  backface-visibility: hidden;
+  animation-duration: .2s;
+  animation-delay: 2.6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: zoomFadeIn;
+}
+.emologo .hover-down {
+  border-bottom: 0;
+  top: 30px;
+  border-top: 16px solid #077c99;
+  border-left: 10px solid transparent;
+}
+.emo-m .hover-up,
+.emo-m .hover-down {
+  animation-delay: 2.8s;
+}
+.emologo .hover-round {
+  position: absolute;
+  z-index: 9;
+  left: 11px;
+  top: 4px;
+  width: 0;
+  height: 0;
+  border: 22px solid #077c99;
+  border-radius: 22px;
+  backface-visibility: hidden;
+  animation-duration: .3s;
+  animation-delay: 3.0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: zoomFadeIn;
+}
+@keyframes step1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes step2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes m2e {
+  0% {
+    transform-origin: center center;
+    transform: rotateZ(0);
+  }
+  100% {
+    transform-origin: center center;
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes e2m {
+  0% {
+    transform-origin: center center;
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform-origin: center center;
+    transform: rotateZ(90deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zoomFadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(2);
+    opacity: .9;
+  }
+  100% {
+    transform: scale(0.65);
+    opacity: 1;
+  }
+}
+@keyframes t1sort {
+  0% {
+    transform-origin: center center;
+    transform: translate(0, 0);
+  }
+  90% {
+    transform-origin: center center;
+    transform: translate(0, -32px);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(0, -1px);
+  }
+}
+@keyframes t2sort {
+  0% {
+    transform-origin: center center;
+    transform: translate(0, 0);
+  }
+  90% {
+    transform-origin: center center;
+    transform: translate(-32px, -32px);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(1px, -1px);
+  }
+}
+@keyframes t3sort {
+  0% {
+    transform-origin: center center;
+    transform: translate(0, 0);
+  }
+  90% {
+    transform-origin: center center;
+    transform: translate(-32px, 32px);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(1px, -2px);
+  }
+}
+@keyframes t4sort {
+  0% {
+    transform-origin: center center;
+    transform: translate(0, 0);
+  }
+  90% {
+    transform-origin: center center;
+    transform: translate(0, 32px);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(0, -2px);
+  }
+}
+@keyframes t5sort {
+  0% {
+    transform-origin: center center;
+    transform: translate(0, 0);
+  }
+  90% {
+    transform-origin: center center;
+    transform: translate(32px, 32px);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(-1px, -2px);
+  }
+}
+@keyframes t6sort {
+  0% {
+    transform-origin: center center;
+    transform: translate(0, 0);
+  }
+  90% {
+    transform-origin: center center;
+    transform: translate(32px, -32px);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(-1px, -1px);
+  }
+}
